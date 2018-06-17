@@ -1,0 +1,31 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  display: flex;
+}
+
+.Main {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: ltc-bodoni-175;
+  font-size: 64px;
+  letter-spacing: .04em;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.sub {
+  font-size: 16px;
+  text-align: center;
+  font-family: brandon-grotesque;
+  line-height: 1em;
+  letter-spacing: .3em;
+  font-weight: 500;
+  font-style: normal;
+}
