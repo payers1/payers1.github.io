@@ -3,7 +3,7 @@ import ReactMapGL from 'react-map-gl'
 import './App.css';
 import Main from './components/Main';
 
-const MAPSTYLE = 'mapbox://styles/payers/cjdoiyx9b12dk2soeaf63hwki'
+const MAPSTYLE = 'mapbox://styles/mapbox/dark-v9'
 
 class App extends Component {
   constructor(props) {
