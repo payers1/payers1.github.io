@@ -22,3 +22,13 @@ h1 {
   font-weight: 500;
   font-style: normal;
 }
+.icons {
+  display: flex;
+  margin: 20px auto;
+  width: 300px;
+  justify-content: space-evenly;
+}
+
+.anticon {
+  font-size: 40px;
+}

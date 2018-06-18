@@ -6,9 +6,13 @@ export default () => {
     <div>
       <h1> Phill Ayers </h1>
       <h1 className="sub"> SOFTWARE ENGINEER </h1>
-      <div style={{display: 'flex', margin: '20px auto', width: '300px', justifyContent: 'space-evenly'}}>
-        <Icon style={{fontSize: 40}} type="github" />
-        <Icon style={{fontSize: 40}} type="linkedin" />
+      <div className="icons">
+        <a href='https://github.com/payers1' target="_blank">
+          <Icon type="github" />
+        </a>
+        <a href='https://www.linkedin.com/in/phill-ayers-aa6074b8' target="_blank">
+          <Icon type="linkedin" />
+        </a>
       </div>
 
     </div>
