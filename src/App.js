@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactMapGL from 'react-map-gl'
+import { Row, Col } from 'antd';
+import { delay } from 'bluebird';
 import './App.css';
 import Main from './components/Main';
-import { Row, Col } from 'antd';
 
 const MAPSTYLE = 'mapbox://styles/mapbox/dark-v9'
 
@@ -19,6 +20,20 @@ class App extends Component {
       }
     }
     this.map = React.createRef();
+  }
+
+  componentDidMount() {
+    const map = this.map.current.getMap()
+    map.on('load', async () => {
+      await delay(1500)
+      this.setState({
+        viewport: {
+          ...this.state.viewport,
+          zoom: 13,
+          transitionDuration: 20000
+        }
+      })
+    })
   }
 
   render() {
