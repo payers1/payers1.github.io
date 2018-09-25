@@ -1,5 +1,6 @@
-import React from "react";
-import { Icon } from "antd";
+import React from 'react'
+import { Icon } from 'antd'
+import { Wu } from './Wu'
 
 export default () => (
   <div className="Main">
@@ -14,7 +15,7 @@ export default () => (
         >
           <Icon type="github" />
         </a>
-        <img src="/wu.jpeg" height="50" />
+        <Wu />
         <a
           href="https://www.linkedin.com/in/phill-ayers-aa6074b8"
           target="_blank"
@@ -25,4 +26,4 @@ export default () => (
       </div>
     </div>
   </div>
-);
+)
