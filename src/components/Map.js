@@ -23,14 +23,14 @@ class Map extends Component {
   componentDidMount() {
     const map = this.map.current.getMap()
     map.on('load', async () => {
-      await delay(1500)
-      this.setState({
-        viewport: {
-          ...this.state.viewport,
-          zoom: 13,
-          transitionDuration: 20000
-        }
-      })
+      // await delay(1500)
+      // this.setState({
+      //   viewport: {
+      //     ...this.state.viewport,
+      //     zoom: 13,
+      //     transitionDuration: 20000
+      //   }
+      // })
     })
   }
 
