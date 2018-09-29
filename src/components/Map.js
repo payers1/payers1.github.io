@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import ReactMapGL from 'react-map-gl'
+import ReactMapGL, { HTMLOverlay } from 'react-map-gl'
 import { delay } from 'bluebird'
+import LocationOverlay from '../Group'
 
 const MAPSTYLE = 'mapbox://styles/mapbox/dark-v9'
 
@@ -42,7 +43,9 @@ class Map extends Component {
         mapStyle={MAPSTYLE}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         onViewportChange={viewport => this.setState({ viewport })}
-      />
+      >
+        <HTMLOverlay redraw={props => <LocationOverlay />} />
+      </ReactMapGL>
     )
   }
 }
