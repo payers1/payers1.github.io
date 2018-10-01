@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactMapGL, { HTMLOverlay } from 'react-map-gl'
 import { delay } from 'bluebird'
-import LocationOverlay from '../Group'
+import LocationOverlay from './LocationOverlay'
 
 const MAPSTYLE = 'mapbox://styles/mapbox/dark-v9'
 
