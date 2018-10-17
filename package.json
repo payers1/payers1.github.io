@@ -9,7 +9,10 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-map-gl": "^3.2.9",
-    "react-scripts": "1.1.4"
+    "react-scripts": "2.0.5"
+  },
+  "engines": {
+    "node": "9.10.0"
   },
   "homepage": "http://payers1.github.io",
   "scripts": {
@@ -30,5 +33,11 @@
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "gh-pages": "^1.2.0"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
