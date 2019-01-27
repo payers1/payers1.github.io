@@ -11,7 +11,7 @@ const App = () => (
         <Main />
       </Col>
       <Col xs={24} md={12}>
-        <Map />
+        <Map showOverLay={false} />
       </Col>
     </Row>
   </div>
