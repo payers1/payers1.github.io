@@ -12,3 +12,6 @@ pipeline:
   build-and-push:
     image: plugins/docker
     dockerfile: Dockerfile
+    tags: latest
+    repo: payers/test
+
