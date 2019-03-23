@@ -12,6 +12,5 @@ pipeline:
 
   build-and-push:
     image: plugins/docker
-    privileged: true
     commands:
       - ls
