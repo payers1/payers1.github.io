@@ -8,6 +8,8 @@ pipeline:
     image: docker
     commands:
       - printenv
+      - touch test.js
+      - ls
 
   build-and-push:
     image: plugins/docker
