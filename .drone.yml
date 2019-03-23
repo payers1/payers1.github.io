@@ -3,10 +3,11 @@ pipeline:
    image: node:10
    commands:
      - printenv
+     - yarn
+     - yarn build
      - touch test.js
      - ls
      
-
   build:
     image: docker
     commands:
