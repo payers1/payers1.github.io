@@ -12,4 +12,4 @@ pipeline:
   build-and-push:
     image: plugins/docker
     commands:
-      - docker volume ls
+      - /usr/local/bin/docker volume ls
