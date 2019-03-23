@@ -13,5 +13,6 @@ pipeline:
   build-and-push:
     image: plugins/docker
     volumes: [ .:/test ]
+    privileged: true
     commands:
       - ls
