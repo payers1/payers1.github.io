@@ -8,16 +8,8 @@ pipeline:
      - touch test.js
      - ls
      
-  build:
-    image: docker
-    commands:
-      - printenv
-
   build-and-push:
     image: plugins/docker
     dockerfile: Dockerfile
     tags: latest
     repo: payers1/test
-    build_args:
-      - TEST=test
-
