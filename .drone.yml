@@ -3,13 +3,14 @@ pipeline:
    image: node:10
    commands:
      - printenv
+     - touch test.js
+     - ls
+     
 
   build:
     image: docker
     commands:
       - printenv
-      - touch test.js
-      - ls
 
   build-and-push:
     image: plugins/docker
