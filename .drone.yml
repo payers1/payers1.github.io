@@ -4,3 +4,8 @@ pipeline:
    commands:
      - printenv
      - yarn
+    
+  build:
+    image: docker
+    commands:
+      - printenv
