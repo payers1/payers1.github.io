@@ -1,5 +1,5 @@
 FROM node:10
 RUN printenv
-RUN cd /usr
+RUN ls /usr
 RUN echo hello world
-RUN ls
+RUN ls /usr/src
