@@ -16,3 +16,9 @@ pipeline:
     privileged: true
     commands:
       - ls
+
+services:
+  docker:
+    image: docker:dind
+    command: [ "--storage-driver=vfs", "--tls=false" ]
+    privileged: true
