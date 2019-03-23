@@ -1,1 +1,5 @@
-
+pipeline:
+  test:
+   image: node:10
+   commands:
+     - yarn
