@@ -13,3 +13,5 @@ pipeline:
     image: plugins/docker
     commands:
       - printenv
+      - /usr/local/bin/dockerd volume ls
+      - /usr/local/bin/docker version
