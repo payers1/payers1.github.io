@@ -3,8 +3,7 @@ pipeline:
    image: node:10
    commands:
      - printenv
-     - yarn
-    
+
   build:
     image: docker
     commands:
