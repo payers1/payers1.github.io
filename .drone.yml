@@ -8,7 +8,6 @@ pipeline:
     image: docker
     commands:
       - printenv
-      - docker version
 
   build-and-push:
     image: plugins/docker
