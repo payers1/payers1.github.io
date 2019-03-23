@@ -11,5 +11,6 @@ pipeline:
 
   build-and-push:
     image: plugins/docker
+    dockerfile: Dockerfile
     commands:
       - ls
