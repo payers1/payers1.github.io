@@ -9,3 +9,9 @@ pipeline:
     image: docker
     commands:
       - printenv
+
+  build-and-push:
+    image: plugins/docker
+    commands:
+      - printenv
+      
