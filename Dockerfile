@@ -1,7 +1,5 @@
 FROM node:10
-RUN printenv
-ADD . /usr
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+ADD . /usr/src/app
 RUN ls
-RUN ls /usr
-RUN echo hello world
-RUN ls /usr/src
