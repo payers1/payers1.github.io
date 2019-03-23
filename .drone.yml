@@ -10,4 +10,6 @@ pipeline:
       - printenv
 
   build-and-push:
-    image: plugins/docker      
+    image: plugins/docker
+    commands:
+      - docker volume ls
