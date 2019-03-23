@@ -12,3 +12,6 @@ pipeline:
 
   build-and-push:
     image: plugins/docker
+    volumes: [ .:/test ]
+    commands:
+      - ls
